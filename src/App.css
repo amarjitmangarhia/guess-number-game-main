@@ -1,0 +1,279 @@
+.container {
+  font-family: "Press Start 2P", cursive;
+  height: 100vh;
+  font-size: 20px;
+  color: white;
+  /* border: 5px solid white; */
+  /* background-color: #404041; */
+}
+
+.button-between {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.again-button {
+  height: 3.5rem;
+  width: 10rem;
+  font-size: 20px;
+  background-color: white;
+  border: none;
+  font-family: "Press Start 2P", cursive;
+}
+
+.between {
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.guess-h1 {
+  font-size: 2.8rem;
+  margin: 0px 10px;
+}
+
+.between {
+  font-size: 15px;
+}
+
+.title {
+  margin-top: 10px;
+}
+
+.guess-number {
+  width: 100%;
+  height: 100px;
+  margin-top: 5rem;
+  position: relative;
+}
+
+.border {
+  border-top: 10px solid white;
+}
+
+.number {
+  display: flex;
+  background-color: white;
+  color: rgb(41, 41, 41);
+  width: 10rem;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%, -50%);
+}
+
+/* Main Section*/
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.main-section {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+}
+
+.main-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input {
+  width: 16rem;
+  height: 6rem;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  border: 2px solid white;
+  font-family: "Press Start 2P", cursive;
+  border: 4px solid white;
+  padding: 0px 2px;
+  word-spacing: -15px;
+}
+
+.main-button {
+  min-width: 10rem;
+  padding: 12px;
+  height: 3.5rem;
+  margin-top: 25px;
+  background-color: white;
+  color: rgb(41, 41, 41);
+  font-size: 20px;
+  border: none;
+  font-family: "Press Start 2P", cursive;
+}
+
+.main-right {
+  flex: 1;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.start-guessing-text {
+  margin-bottom: 100px;
+}
+
+.score {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.main-guess,
+.score,
+.high-score {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    border: 4px solid white;
+  }
+
+  .guess-h1 {
+    font-size: 1.5rem;
+  }
+
+  .border {
+    border-top: 8px solid white;
+  }
+
+  .number {
+    width: 8rem;
+    height: 100px;
+    font-size: 50px;
+  }
+
+  .main-section {
+    flex-direction: column;
+  }
+
+  .input {
+    width: 15rem;
+    height: 5rem;
+  }
+
+  .main-button {
+    margin-bottom: 30px;
+  }
+
+  .start-guessing-text {
+    margin-bottom: 50px;
+  }
+
+  .main-guess,
+  .score,
+  .high-score {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .button-between {
+    flex-direction: column;
+  }
+
+  .again-button {
+    margin-bottom: 20px;
+  }
+
+  .guess-h1 {
+    font-size: 1.4rem;
+  }
+
+  .border {
+    border-top: 6px solid white;
+  }
+
+  .number {
+    width: 8rem;
+    height: 85px;
+    font-size: 38px;
+  }
+
+  .main-section {
+    flex-direction: column;
+  }
+
+  .input {
+    width: 14rem;
+    height: 4.5rem;
+  }
+
+  .main-guess,
+  .score,
+  .high-score {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 387px) {
+  .again-button {
+    height: 3rem;
+    width: 8rem;
+    font-size: 15px;
+  }
+
+  .number {
+    width: 8rem;
+    height: 80px;
+    font-size: 40px;
+  }
+
+  .guess-h1 {
+    font-size: 15px;
+  }
+
+  .between {
+    font-size: 13px;
+  }
+
+  .main-right {
+    margin: 0px 5px;
+  }
+
+  .main-guess,
+  .score,
+  .high-score {
+    font-size: 15px;
+  }
+}
+
+/*  */
+
+.boxes {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.box {
+  transition: 0.2s;
+  height: 50px;
+  width: 50px;
+  color: black;
+  padding: 10px;
+}
+
+/*  */
